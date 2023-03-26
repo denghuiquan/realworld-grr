@@ -1,0 +1,44 @@
+{
+  "name": "realworld-grr",
+  "version": "1.0.0",
+  "private": true,
+  "description": "realworld-grr",
+  "author": "denghuiquan",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "axios": "^1.3.4",
+    "dayjs": "^1.11.7",
+    "gatsby": "4.23.0",
+    "gatsby-awesome-pagination": "^0.3.8",
+    "gatsby-image": "^3.11.0",
+    "gatsby-node-helpers": "^1.2.1",
+    "gatsby-plugin-create-client-paths": "^4.9.0",
+    "gatsby-plugin-less": "^6.25.0",
+    "gatsby-plugin-react-helmet": "^5.25.0",
+    "gatsby-plugin-sharp": "^4.23.0",
+    "gatsby-remark-images": "^6.20.0",
+    "gatsby-source-filesystem": "^4.23.0",
+    "gatsby-source-strapi": "^2.0.0",
+    "gatsby-transformer-json": "^4.23.0",
+    "gatsby-transformer-remark": "^5.20.0",
+    "gatsby-transformer-sharp": "^4.23.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
+    "redux-saga": "^1.2.3"
+  },
+  "devDependencies": {
+    "gatsby-disable-404": "^0.2.1"
+  }
+}
