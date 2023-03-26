@@ -1,6 +1,6 @@
 # The Realworld Demo Built with React, Redux and Gatsby 
 
-Project Url: [https://github.com/denghuiquan/realworld-grr](https://github.com/denghuiquan/realworld-grr)
+Project Url: [https://github.com/denghuiquan/realworld-grr2](https://github.com/denghuiquan/realworld-grr2)
 
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
