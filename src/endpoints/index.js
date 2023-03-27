@@ -42,9 +42,17 @@ export function getArticleByPage (params = { offset: 0, limit: 50 }, token) {
   })
 }
 
-export function getArticleByAuthor (author, params = { offset: 0, limit: 10 }) {
+export function getArticleByAuthor (
+  author,
+  params = { offset: 0, limit: 10 },
+  token
+) {
+  if (!token) token = getToken()
   return axios.get('/articles', {
-    params: { author, ...params }
+    params: { author, ...params },
+    headers: {
+      Authorization: `Token ${token}`
+    }
   })
 }
 
@@ -58,8 +66,13 @@ export function getFeedArticleByPage (params = { offset: 0, limit: 50 }, token) 
   })
 }
 
-export function getArticleBySlug (slug) {
-  return axios.get(`/articles/${slug}`)
+export function getArticleBySlug (slug, token) {
+  if (!token) token = getToken()
+  return axios.get(`/articles/${slug}`, {
+    headers: {
+      Authorization: `Token ${token}`
+    }
+  })
 }
 
 export function getUserProfile (username, token) {
@@ -108,11 +121,21 @@ export function unfavoriteArticle (slug, token) {
   })
 }
 
-export function getTags () {
-  return axios.get('/tags')
+export function getTags (token) {
+  if (!token) token = getToken()
+  return axios.get('/tags', {
+    headers: {
+      Authorization: `Token ${token}`
+    }
+  })
 }
-export function getArticleComments (slug) {
-  return axios.get(`/articles/${slug}/comments`)
+export function getArticleComments (slug, token) {
+  if (!token) token = getToken()
+  return axios.get(`/articles/${slug}/comments`, {
+    headers: {
+      Authorization: `Token ${token}`
+    }
+  })
 }
 
 export function addArticleComment (slug, comment, token) {

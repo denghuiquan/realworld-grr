@@ -76,7 +76,6 @@ export default function Article ({ data, location, slug }) {
   const deleteComment = async id => {
     // /api/articles/:slug/comments/:id
     const { data } = await deleteArticleComment(article.slug, id)
-    console.log(data)
     setComments(comments.filter(comment => comment.id !== id))
   }
 

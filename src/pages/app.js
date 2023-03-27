@@ -4,6 +4,7 @@ import Profile from '../components/profile'
 import Setting from '../components/setting'
 import CreateOrEditArticle from '../components/createOrEditArticle'
 import PrivateRoute from '../components/PrivateRoute'
+import NotFound from './404'
 
 export default function App () {
   return (

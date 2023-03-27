@@ -24,7 +24,7 @@ const codeStyles = {
   borderRadius: 4
 }
 
-export default NotFound = ({ location }) => {
+export default function NotFound ({ location }) {
   console.log(location)
   const { pathname } = location
   if (pathname.startsWith('/article/detail/')) {
